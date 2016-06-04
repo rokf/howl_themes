@@ -178,8 +178,8 @@ return {
 
     list_highlight:
       type: highlight.UNDERLINE
-      foreground: white
-      text_color: white
+      foreground: foreground -- white
+      text_color: foreground -- white
       line_width: 2
 
     cursor:
