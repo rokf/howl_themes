@@ -14,7 +14,7 @@ green        = '#a6e22a'
 aqua         = '#99ffff'
 blue         = '#89bdff'
 purple       = '#ae81ff'
-magenta      = '#F92651'
+magenta      = blue -- F92651
 grey         = '#595959'
 grey_darker  = '#383830'
 grey_darkest = '#243336'
@@ -228,7 +228,7 @@ return {
 
     key:
       color: blue
-      font: bold: true
+      font: bold: false -- true
 
     fdecl:
       color: green
@@ -236,7 +236,7 @@ return {
 
     keyword:
       color: magenta
-      font: bold: true
+      font: bold: false -- true
 
     class:
       color: blue
