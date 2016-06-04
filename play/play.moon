@@ -133,7 +133,7 @@ return {
 
     edge_line:
       type: flair.PIPE,
-      foreground: blue,
+      foreground: grey_darker, -- blue ?
       foreground_alpha: 0.3,
       line_width: 0.5
 
