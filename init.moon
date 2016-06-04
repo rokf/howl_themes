@@ -1,8 +1,10 @@
+
 theme = howl.ui.theme
 
 themes = {
   'Berrykai': bundle_file('berrykai/berrykai.moon'),
   'Play': bundle_file('play/play.moon'),
+  'Woodland': bundle_file('woodland/woodland.moon'),
 }
 
 for name,file in pairs themes
@@ -15,8 +17,8 @@ unload = ->
 {
   info: {
     author: 'rokf@github',
-    description: 'Some aditional themes for Howl',
+    description: 'Some additional themes for Howl',
     license: 'MIT',
   },
-  unload: unload
+  :unload
 }

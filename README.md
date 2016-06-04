@@ -11,8 +11,9 @@ The colors might change over time, as I am tweaking themes to my liking.
 
 ## Contains
 
-- Berrykai - Tweaked blue-ish Monokai
-- Play - Built upon Monokai but light with a background pattern
+- Berrykai - tweaked blue-ish Monokai
+- Play - built upon Monokai but light with a background pattern
+- Woodland - a light theme, WIP
 
 ## Patterns
 
