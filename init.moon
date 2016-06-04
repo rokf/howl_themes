@@ -1,7 +1,8 @@
 theme = howl.ui.theme
 
 themes = {
-  'Berrykai': bundle_file('berrykai/berrykai.moon')
+  'Berrykai': bundle_file('berrykai/berrykai.moon'),
+  'Play': bundle_file('play/play.moon'),
 }
 
 for name,file in pairs themes

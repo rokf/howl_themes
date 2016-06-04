@@ -12,3 +12,8 @@ The colors might change over time, as I am tweaking themes to my liking.
 ## Contains
 
 - Berrykai - Tweaked blue-ish Monokai
+- Play - Built upon Monokai but light with a background pattern
+
+## Patterns
+
+They're from http://subtlepatterns.com/, I didn't make them.
