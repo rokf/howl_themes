@@ -9,6 +9,10 @@ Clone or download into `~/.howl/bundles`. Please save it under a different folde
 
 The colors might change over time, as I am tweaking themes to my liking.
 
+You may also just copy paste this:
+
+`git clone https://github.com/rokf/howl_themes ~/.howl/bundles/custom_themes`
+
 ## Contains
 
 - Berrykai - tweaked blue-ish Monokai

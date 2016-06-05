@@ -8,7 +8,8 @@ comment      = '#4E4E4E'
 red          = '#F87C7A'
 darkred      = '#D34846'
 orange       = '#FA8A51'
-redish       = '#4A3D28' -- 697B43
+-- redish       = '#4A3D28' -- 697B43
+redish       = '#6D7E3B'
 redish_dark  = '#312A1E'
 dark_purple  = '#617247'
 aqua         = '#88A9A9'
@@ -27,7 +28,7 @@ content_box = {
   background:
     color: background
     image:
-      path: theme_file('tree_bark.png')
+      path: theme_file('noisy_grid.png')
 
   border:
     width: 1
