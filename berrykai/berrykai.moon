@@ -7,13 +7,13 @@ foreground   = '#ffffff'
 comment      = '#75715e'
 red          = '#ff9da4'
 darkred      = '#8b0000'
-orange       = '#ffc58f'
+orange       = '#F0CE6C'
 yellow       = '#e6db74'
 yellow_dark  = '#75715e'
-green        = '#a6e22a'
+green        = '#BBE85E'
 aqua         = '#99ffff'
-blue         = '#89bdff'
-purple       = '#ae81ff'
+blue         = '#86AAD7'
+purple       = '#A282DB'
 magenta      = blue -- F92651
 grey         = '#595959'
 grey_darker  = '#383830'
@@ -21,6 +21,9 @@ grey_darkest = '#243336'
 grey_light   = '#a6a6a6'
 embedded_bg  = '#484848'
 border_color = '#333333'
+orangered    = '#DC5E4A'
+eee = '#EEEEEE'
+d7 = '#D7DDDF'
 
 -- General styling for context boxes (editor, command_line)
 content_box = {
@@ -46,7 +49,7 @@ content_box = {
     border_bottom:
       color: grey_darker
 
-    color: white
+    color: eee
     font: bold: false -- true
     padding: 1
 
@@ -177,8 +180,8 @@ return {
 
     list_highlight:
       type: highlight.UNDERLINE
-      foreground: white
-      text_color: white
+      foreground: eee
+      text_color: eee
       line_width: 2
 
     cursor:
@@ -228,15 +231,15 @@ return {
 
     key:
       color: blue
-      font: bold: false -- true
+      font: bold: true
 
     fdecl: -- function declaration
       color: green
-      font: bold: false -- true
+      font: bold: false
 
     keyword:
       color: magenta
-      font: bold: false -- true
+      font: bold: true
 
     class:
       color: blue
@@ -259,7 +262,7 @@ return {
       font: italic: true
 
     char: color: green
-    number: color: purple
+    number: color: orange
     operator: color: magenta
     preproc: color: aqua
     special: color: purple
@@ -272,6 +275,7 @@ return {
 
     string:
       color: yellow
+      -- color: orangered
 
     regex:
       color: green
@@ -285,7 +289,7 @@ return {
 
     error:
       font: italic: true
-      color: white
+      color: eee
       background: darkred
 
     warning:
