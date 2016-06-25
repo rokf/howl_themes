@@ -47,7 +47,7 @@ content_box = {
       color: grey_darker
 
     color: white
-    font: bold: true
+    font: bold: false -- true
     padding: 1
 
   footer:
@@ -89,14 +89,14 @@ return {
         color: grey_light
 
       title:
-        font: bold: true
+        font: bold: false -- true
 
       vi:
         font: bold: true
 
     caret:
       color: grey_light
-      width: 2
+      width: 1
 
     current_line:
       background: current
@@ -230,9 +230,9 @@ return {
       color: blue
       font: bold: false -- true
 
-    fdecl:
+    fdecl: -- function declaration
       color: green
-      font: bold: true
+      font: bold: false -- true
 
     keyword:
       color: magenta
@@ -252,7 +252,7 @@ return {
 
     function:
       color: blue
-      font: bold: true
+      font: bold: false -- true
 
     type:
       color: blue

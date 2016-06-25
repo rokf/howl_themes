@@ -1,5 +1,5 @@
 
-# Howl Themes
+![howl_themes](howl_themes.png)
 
 Theme bundle for the Howl editor (http://howl.io/)
 
