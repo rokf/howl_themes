@@ -1,33 +1,6 @@
 {:delegate_to} = howl.util.table
 
-background   = '#0E1F23'
-current      = '#75715e'
-selection    = '#759557'
-foreground   = '#ffffff'
-comment      = '#75715e'
-red          = '#ff9da4'
-darkred      = '#8b0000'
-orange       = '#F0CE6C'
-yellow       = '#e6db74'
-yellow_dark  = '#75715e'
-green        = '#BBE85E'
-aqua         = '#99ffff'
-blue         = '#86AAD7'
-purple       = '#A282DB'
-magenta      = blue -- F92651
-grey         = '#595959'
-grey_darker  = '#383830'
-grey_darkest = '#243336'
-grey_light   = '#a6a6a6'
-embedded_bg  = '#484848'
-border_color = '#333333'
-orangered    = '#DC5E4A'
-eee = '#EEEEEE'
-d7 = '#D7DDDF'
-
--- New colors
-
-c = {
+c = { -- COLORS
   text: "#C0C5CE"
   comments: "#898295"
   punctuation: "#C0C5CE"
@@ -36,7 +9,8 @@ c = {
   keywords: "#CDC6D8"
   variables: "#CDC6D8"
   functions: "#B887DD"
-  classes: "#CDC6D8"
+  classes: "#A3BE8C"
+  -- classes: "#CDC6D8"
   classes2: "#EFF1F5"
   methods: "#8FA1B3"
   storage: "#67B1D7"
@@ -51,10 +25,10 @@ c = {
   attribute_ids: "#8FA1B3"
   selector: "#CDC6D8"
   values: "#CDC6D8"
-  headings: "#8FA1B3"
-  units: "#CDC6D8"
-  code: "#A3BE8C"
-  quotes: "#D08770"
+  headings: "#8FA1B3" -- blueish
+  units: "#CDC6D8" -- violet
+  code: "#A3BE8C" -- greeny
+  quotes: "#D08770" -- orange
   separator_f: "#C0C5CE"
   separator_b: "#4F5B66"
   inserted: "#A3BE8C"
@@ -73,7 +47,6 @@ c = {
   selection: "#4F5B66"
 }
 
--- General styling for context boxes (editor, command_line)
 content_box = {
   background:
     color: c.background
