@@ -2,14 +2,14 @@
 
 c = { -- COLORS
   text: "#C0C5CE"
-  comments: "#898295"
+  comments: "#443D4D" -- "#898295"
   punctuation: "#C0C5CE"
   delimeeters: "#C0C5CE"
   operators: "#c0c5ce"
   keywords: "#CDC6D8"
   variables: "#CDC6D8"
   functions: "#B887DD"
-  classes: "#A3BE8C"
+  classes: "#6CA6C9"
   -- classes: "#CDC6D8"
   classes2: "#EFF1F5"
   methods: "#8FA1B3"
@@ -49,26 +49,27 @@ c = { -- COLORS
 
 content_box = {
   background:
-    color: c.background
+    -- color: c.background
+    color: "#201D24"
 
   border:
     width: 1
-    color: c.background
+    color: "#1D1B21"
 
   border_right:
     width: 3
-    color: c.background
+    color: "#1D1B21"
 
   border_bottom:
     width: 3
-    color: c.background
+    color: "#1D1B21"
 
   header:
     background:
-      color: c.background
+      color: "#1D1B21"
 
     border_bottom:
-      color: c.background
+      color: "#1D1B21"
 
     color: c.foreground
     font: bold: false -- true
@@ -76,10 +77,10 @@ content_box = {
 
   footer:
     background:
-      color: c.background
+      color: "#1D1B21"
 
     border_top:
-      color: c.background
+      color: "#1D1B21"
 
     color: c.foreground
     padding: 1
@@ -95,8 +96,8 @@ return {
       color: c.foreground
 
       info: color: c.foreground
-      warning: color: c.foreground
-      'error': color: c.foreground
+      warning: color: "#D08770"
+      'error': color: "#DB6369"
 
   :content_box
 
@@ -127,8 +128,8 @@ return {
     gutter:
       color: c.foreground
       background:
-        color: c.background
-        alpha: 0.6
+        color: "#1D1B21"
+        -- alpha: 0.6
   }
 
   flairs:
@@ -189,7 +190,7 @@ return {
       type: flair.RECTANGLE
       foreground: c.foreground
       text_color: c.foreground
-      line_width: 1
+      -- line_width: 1
       height: 'text'
 
     list_selection:
@@ -258,7 +259,7 @@ return {
 
     keyword:
       color: c.keywords
-      font: bold: false
+      font: bold: true
 
     class:
       color: c.classes
@@ -277,7 +278,7 @@ return {
 
     type:
       color: c.classes
-      font: italic: true
+      font: italic: false
 
     char: color: c.strings
     number: color: c.integers
