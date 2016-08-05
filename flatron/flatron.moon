@@ -2,7 +2,8 @@
 
 c = { -- COLORS
   text: "#C0C5CE"
-  comments: "#443D4D" -- "#898295"
+  -- comments: "#443D4D" -- "#898295"
+  comments: "#CCC97F"
   punctuation: "#C0C5CE"
   delimeeters: "#C0C5CE"
   operators: "#c0c5ce"
