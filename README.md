@@ -17,7 +17,7 @@ You may also just copy paste this:
 
 - Berrykai - tweaked blue-ish Monokai
 - Play - built upon Monokai but light with a background pattern
-- Woodland - a light theme, WIP
+- Flatron
 
 ## Patterns
 
