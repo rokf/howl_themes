@@ -2,7 +2,6 @@
 
 c = { -- COLORS
   text: "#C0C5CE"
-  -- comments: "#443D4D" -- "#898295"
   comments: "#CCC97F"
   punctuation: "#C0C5CE"
   delimeeters: "#C0C5CE"
@@ -11,7 +10,6 @@ c = { -- COLORS
   variables: "#CDC6D8"
   functions: "#B887DD"
   classes: "#6CA6C9"
-  -- classes: "#CDC6D8"
   classes2: "#EFF1F5"
   methods: "#8FA1B3"
   storage: "#67B1D7"
@@ -38,19 +36,19 @@ c = { -- COLORS
   escape_chars: "#6A6474"
   embedded: "#AB7967"
   tag_start_end: "#9A38D9"
-  invalid_f: "#2B303B"
-  invalid_b: "#CDC6D8"
+  invalid_b: "#2B303B"
+  invalid_f: "#CDC6D8"
   background: "#25222A"
   caret: "#C0C5CE"
   foreground: "#898295"
   invisibles: "#65737E"
   line_highlight: "#19161B"
   selection: "#4F5B66"
+  brace: "#D08770"
 }
 
 content_box = {
   background:
-    -- color: c.background
     color: "#201D24"
 
   border:
@@ -130,39 +128,42 @@ return {
       color: c.foreground
       background:
         color: "#1D1B21"
-        -- alpha: 0.6
   }
 
   flairs:
+    -- indentation guides are fixed
     indentation_guide:
       type: flair.PIPE,
-      foreground: c.comments, -- TODO
-      background: c.background,
-      line_width: 1
+      foreground: c.foreground,
+      foreground_alpha: 0.3,
+      line_width: 0.5
 
     indentation_guide_1:
       type: flair.PIPE,
-      foreground: c.comments,
-      line_width: 1
+      foreground: c.foreground,
+      foreground_alpha: 0.3,
+      line_width: 0.5
 
     indentation_guide_2:
       type: flair.PIPE,
-      foreground: c.comments,
-      line_width: 1
+      foreground: c.foreground,
+      foreground_alpha: 0.3,
+      line_width: 0.5
 
     indentation_guide_3:
       type: flair.PIPE,
-      foreground: c.comments,
-      line_width: 1
+      foreground: c.foreground,
+      foreground_alpha: 0.3,
+      line_width: 0.5
     edge_line:
       type: flair.PIPE,
-      foreground: c.comments,
+      foreground: c.foreground,
       foreground_alpha: 0.3,
       line_width: 0.5
 
     search:
       type: highlight.ROUNDED_RECTANGLE
-      foreground: c.foreground -- TODO
+      foreground: c.foreground -- ?
       foreground_alpha: 1
       background: c.background
       text_color: c.foreground
@@ -183,20 +184,17 @@ return {
 
     brace_highlight:
       type: flair.RECTANGLE
-      text_color: c.foreground
-      background: c.background
+      text_color: c.brace
       height: 'text'
 
     brace_highlight_secondary:
       type: flair.RECTANGLE
-      foreground: c.foreground
-      text_color: c.foreground
-      -- line_width: 1
+      text_color: c.brace
       height: 'text'
 
     list_selection:
       type: flair.RECTANGLE
-      background: c.selector -- TODO
+      background: c.selector
       background_alpha: 0.3
 
     list_highlight:
@@ -207,13 +205,13 @@ return {
 
     cursor:
       type: flair.RECTANGLE
-      background: c.foreground -- TODO
+      background: c.foreground
       width: 2
       height: 'text'
 
-    block_cursor:
+    block_cursor: -- ?
       type: flair.ROUNDED_RECTANGLE,
-      background: c.foreground -- TODO, SWAP?
+      background: c.foreground
       text_color: c.background
       height: 'text',
       min_width: 'letter'
