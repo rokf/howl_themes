@@ -22,22 +22,20 @@ grey_light   = '#828282'
 embedded_bg  = '#9C9C9C'
 border_color = '#EFEFEF'
 
--- General styling for context boxes (editor, command_line)
 content_box = {
   background:
-    image:
-      path: theme_file('light_wool.png')
+    color: background
 
   border:
     width: 1
     color: border_color
 
   border_right:
-    width: 3
+    -- width: 3
     color: border_color
 
   border_bottom:
-    width: 3
+    -- width: 3
     color: border_color
 
   header:
@@ -45,11 +43,11 @@ content_box = {
       color: fafafa
 
     border_bottom:
-      color: grey_darker
+      color: border_color
+      width: 3
 
     color: white
-    font: bold: true
-    padding: 1
+    padding: 0
 
   footer:
     background:
@@ -82,7 +80,7 @@ return {
     background:
       color: fafafa
     border:
-      color: grey
+      color: foreground
 
   editor: delegate_to content_box, {
     indicators:
@@ -106,7 +104,6 @@ return {
       color: comment
       background:
         color: fafafa
-        alpha: 1 -- 0.6
   }
 
   flairs:
@@ -161,7 +158,7 @@ return {
     brace_highlight:
       type: flair.RECTANGLE
       text_color: foreground
-      background: '#0064b1'
+      -- background: '#0064b1'
       height: 'text'
 
     brace_highlight_secondary:
@@ -178,8 +175,8 @@ return {
 
     list_highlight:
       type: highlight.UNDERLINE
-      foreground: foreground -- white
-      text_color: foreground -- white
+      foreground: foreground
+      text_color: foreground
       line_width: 2
 
     cursor:
@@ -229,7 +226,7 @@ return {
 
     key:
       color: blue
-      font: bold: false -- true
+      font: bold: true
 
     fdecl:
       color: dark_purple
@@ -237,7 +234,7 @@ return {
 
     keyword:
       color: magenta
-      font: bold: false -- true
+      font: bold: true
 
     class:
       color: blue
@@ -290,8 +287,7 @@ return {
       background: darkred
 
     warning:
-      font: italic: true
-      color: orange
+      color: foreground -- orange
 
     h1:
       font: bold: true
