@@ -44,38 +44,39 @@ c = { -- COLORS
   invisibles: "#65737E"
   line_highlight: "#19161B"
   selection: "#4F5B66"
-  brace: "#D08770"
+  brace: "#69B7A6"
+  brace_snd: "#DBDE6A"
+  warning: "#D08770"
+  error: "#DB6369"
 }
 
 content_box = {
   background:
     color: "#201D24"
-
+    color: "#1D1B21"
   border:
     width: 1
     color: "#1D1B21"
-
   border_right:
     width: 3
     color: "#1D1B21"
-
   border_bottom:
     width: 3
     color: "#1D1B21"
-
   header:
     background:
       color: "#1D1B21"
-
     border_bottom:
       color: "#1D1B21"
-
     color: c.foreground
     font: bold: false -- true
     padding: 1
-
   footer:
     background:
+      -- gradient:
+      --   type: 'linear'
+      --   direction: 'vertical'
+      --   stops: { c.comments }
       color: "#1D1B21"
 
     border_top:
@@ -89,14 +90,14 @@ return {
   window:
     background:
       color: c.background
-
     status:
-      font: bold: false, italic: true
+      font:
+        bold: false
+        italic: true
       color: c.foreground
-
       info: color: c.foreground
-      warning: color: "#D08770"
-      'error': color: "#DB6369"
+      warning: color: c.warning
+      'error': color: c.error
 
   :content_box
 
@@ -112,7 +113,7 @@ return {
         color: c.foreground
 
       title:
-        font: bold: false -- true
+        font: bold: true
 
       vi:
         font: bold: true
@@ -131,7 +132,6 @@ return {
   }
 
   flairs:
-    -- indentation guides are fixed
     indentation_guide:
       type: flair.PIPE,
       foreground: c.foreground,
@@ -189,7 +189,7 @@ return {
 
     brace_highlight_secondary:
       type: flair.RECTANGLE
-      text_color: c.brace
+      text_color: c.brace_snd
       height: 'text'
 
     list_selection:

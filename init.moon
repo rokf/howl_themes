@@ -16,8 +16,8 @@ unload = ->
 
 {
   info: {
-    author: 'rokf@github',
-    description: 'Some additional themes for Howl',
+    author: 'rokf',
+    description: 'Additional themes for Howl',
     license: 'MIT',
   },
   :unload

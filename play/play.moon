@@ -20,96 +20,83 @@ grey_darker  = '#EFEFEF'
 fafafa       = '#FAFAFA'
 grey_light   = '#828282'
 embedded_bg  = '#9C9C9C'
-border_color = '#EFEFEF'
+border_color = '#B3B3B3'
+dark_gutter  = '#444444'
+light_gutter  = '#EAEAEA'
 
 content_box = {
-  background:
-    color: background
-
+  background: color: background
   border:
     width: 1
     color: border_color
-
   border_right:
-    -- width: 3
     color: border_color
-
   border_bottom:
-    -- width: 3
     color: border_color
-
   header:
+    color: blue -- acts weird
     background:
-      color: fafafa
-
+      color: border_color
     border_bottom:
       color: border_color
-      width: 3
-
-    color: white
-    padding: 0
-
+      width: 1
+    padding: 3
   footer:
+    color: white
     background:
-      color: fafafa
-
+      color: border_color
     border_top:
-      color: grey_darker
-
-    color: grey
+      color: border_color
     font: bold: true
-    padding: 1
+    padding: 3
 }
 
 return {
   window:
     background:
       color: background
-
     status:
-      font: bold: true, italic: true
-      color: grey
-
-      info: color: grey_light
-      warning: color: orange
-      'error': color: red
-
+      font:
+        bold: true
+        italic: false
+      color: foreground -- weird
+      info:
+        color: grey_light
+      warning:
+        color: orange
+      'error':
+        color: red
   :content_box
-
   popup:
     background:
       color: fafafa
     border:
       color: foreground
-
   editor: delegate_to content_box, {
     indicators:
       default:
-        color: grey_light
-
+        color: blue
       title:
-        font: bold: true
-
+        color: blue -- acts weird
+        font:
+          bold: true
       vi:
         font: bold: true
-
     caret:
       color: grey_light
-      width: 2
-
+      width: 1
     current_line:
       background: current
-
     gutter:
-      color: comment
+      color: foreground -- comment
       background:
-        color: fafafa
+        color: light_gutter -- fafafa
   }
 
   flairs:
     indentation_guide:
       type: flair.PIPE,
-      foreground: comment,
+      foreground: grey_darker,
       :background,
       line_width: 1
 
