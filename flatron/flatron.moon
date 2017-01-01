@@ -1,8 +1,8 @@
 {:delegate_to} = howl.util.table
 
-c = { -- COLORS
+c = {
   text: "#C0C5CE"
-  comments: "#CCC97F"
+  comments: "#D2CE6C"
   punctuation: "#C0C5CE"
   delimeeters: "#C0C5CE"
   operators: "#c0c5ce"
@@ -24,10 +24,10 @@ c = { -- COLORS
   attribute_ids: "#8FA1B3"
   selector: "#CDC6D8"
   values: "#CDC6D8"
-  headings: "#8FA1B3" -- blueish
-  units: "#CDC6D8" -- violet
-  code: "#A3BE8C" -- greeny
-  quotes: "#D08770" -- orange
+  headings: "#8FA1B3"
+  units: "#CDC6D8"
+  code: "#A3BE8C"
+  quotes: "#D08770"
   separator_f: "#C0C5CE"
   separator_b: "#4F5B66"
   inserted: "#A3BE8C"
@@ -38,6 +38,7 @@ c = { -- COLORS
   tag_start_end: "#9A38D9"
   invalid_b: "#2B303B"
   invalid_f: "#CDC6D8"
+  -- background: "#383E41"
   background: "#25222A"
   caret: "#C0C5CE"
   foreground: "#898295"
@@ -73,11 +74,8 @@ content_box = {
     padding: 1
   footer:
     background:
-      -- gradient:
-      --   type: 'linear'
-      --   direction: 'vertical'
-      --   stops: { c.comments }
       color: "#1D1B21"
+      -- color: "#383E41"
 
     border_top:
       color: "#1D1B21"
@@ -113,7 +111,7 @@ return {
         color: c.foreground
 
       title:
-        font: bold: true
+        font: bold: false
 
       vi:
         font: bold: true
