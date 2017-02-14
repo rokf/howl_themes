@@ -2,13 +2,17 @@
 
 c = {
   text: "#C0C5CE"
-  comments: "#D2CE6C"
+  -- comments: "#D2CE6C"
+  comments: "#514D59"
   punctuation: "#C0C5CE"
   delimeeters: "#C0C5CE"
   operators: "#c0c5ce"
+  -- operators: "#D7D189"
   keywords: "#CDC6D8"
   variables: "#CDC6D8"
-  functions: "#B887DD"
+  -- functions: "#B887DD"
+  -- functions: "#D5556E"
+  functions: "#70C3B0"
   classes: "#6CA6C9"
   classes2: "#EFF1F5"
   methods: "#8FA1B3"
@@ -43,10 +47,13 @@ c = {
   caret: "#C0C5CE"
   foreground: "#898295"
   invisibles: "#65737E"
-  line_highlight: "#19161B"
+  -- line_highlight: "#19161B"
+  line_highlight: "#110F15"
   selection: "#4F5B66"
-  brace: "#69B7A6"
-  brace_snd: "#DBDE6A"
+  -- brace: "#69B7A6"
+  brace: "#DBDE6A"
+  -- brace_snd: "#DBDE6A"
+  brace_snd: "#DB6369"
   warning: "#D08770"
   error: "#DB6369"
 }
@@ -271,7 +278,7 @@ return {
 
     function:
       color: c.functions
-      font: bold: false
+      font: italic: true
 
     type:
       color: c.classes

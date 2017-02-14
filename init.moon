@@ -5,6 +5,7 @@ themes = {
   'Berrykai': bundle_file('berrykai/berrykai.moon'),
   'Play': bundle_file('play/play.moon'),
   'Flatron': bundle_file('flatron/flatron.moon'),
+  'Darkness': bundle_file('darkness/darkness.moon'),
 }
 
 for name,file in pairs themes

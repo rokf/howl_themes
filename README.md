@@ -18,3 +18,4 @@ You may also just copy paste this:
 - Berrykai (tweaked Monokai)
 - Play (light)
 - Flatron (dark)
+- Darkness (dark grayscale theme with colored strings and numbers)
