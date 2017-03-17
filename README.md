@@ -19,3 +19,4 @@ You may also just copy paste this:
 - Play (light)
 - Flatron (dark)
 - Darkness (dark grayscale theme with colored strings and numbers)
+- Light (turned around Darkness)

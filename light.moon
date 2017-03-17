@@ -240,19 +240,17 @@ return {
       font: italic: false
 
     char: color: colors[5]
-    number: color: "#5696E1"
-    operator: color: colors[5]
+    -- number: color: "#5696E1"
+    number: color: "#5D89BC"
+    operator: color: colors[8]
     preproc: color: colors[13]
     special: color: colors[13]
     tag: color: colors[13]
     member: color: colors[13]
     info: color: colors[8]
-
-    constant:
-      color: colors[12]
-
-    string:
-      color: "#73A4DD"
+    constant: color: colors[12]
+    -- string: color: "#73A4DD"
+    string: color: "#5D89BC"
 
     regex:
       color: colors[15]

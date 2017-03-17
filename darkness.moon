@@ -241,7 +241,7 @@ return {
 
     char: color: colors[5]
     number: color: "#5696E1"
-    operator: color: colors[5]
+    operator: color: colors[7]
     preproc: color: colors[13]
     special: color: colors[13]
     tag: color: colors[13]
