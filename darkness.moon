@@ -131,7 +131,7 @@ return {
 
     search_secondary: -- non selected search
       type: flair.ROUNDED_RECTANGLE
-      background: colors[2]
+      background: colors[4]
       text_color: colors[16]
       height: 'text'
 

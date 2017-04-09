@@ -131,7 +131,7 @@ return {
 
     search_secondary: -- non selected search
       type: flair.ROUNDED_RECTANGLE
-      background: colors[2]
+      background: colors[4]
       text_color: colors[16]
       height: 'text'
 
@@ -184,7 +184,7 @@ return {
 
   styles:
     default:
-      color: colors[10]
+      color: colors[14]
 
     red: color: red
     green: color: green
@@ -242,7 +242,7 @@ return {
     char: color: colors[5]
     -- number: color: "#5696E1"
     number: color: "#5D89BC"
-    operator: color: colors[8]
+    operator: color: colors[10]
     preproc: color: colors[13]
     special: color: colors[13]
     tag: color: colors[13]
