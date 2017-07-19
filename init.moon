@@ -8,6 +8,7 @@ themes = {
   'Darkness': bundle_file('darkness.moon'),
   'Light': bundle_file('light.moon'),
   'Fruity': bundle_file('fruity.moon'),
+  'Eleterm': bundle_file('eleterm.moon'),
 }
 
 for name,file in pairs themes
