@@ -227,7 +227,7 @@ return {
       font: italic: true
 
     type:
-      color: colors.fg
+      color: colors.red
       font: italic: false
 
     char: color: colors.brown

@@ -1,170 +1,185 @@
+-- color source : https://github.com/sindresorhus/hyper-snazzy
+
 {:delegate_to} = howl.util.table
+
+colors = {
+  bg: "#282A36"
+  -- fg: "#F1F1F0"
+  fg: "#E0E0DF"
+  green: "#5AF78E"
+  turq: "#99EDFE"
+  blue: "#57C7FF"
+  red: "#FF5C56"
+  pink: "#FF6AC1"
+  brown: "#F3F99D"
+  grey: "#545B5D"
+}
 
 content_box = {
   background:
-    color: "#f8f8f8"
+    color: colors.bg
   border:
     width: 1
-    color: "#f8f8f8"
+    color: colors.bg
   border_right:
     width: 3
-    color: "#f8f8f8"
+    color: colors.bg
   border_bottom:
     width: 3
-    color: "#f8f8f8"
+    color: colors.bg
   header:
     background:
-      color: "#f8f8f8"
+      color: colors.bg
     border_bottom:
-      color: "#f8f8f8"
-    color: "#1f1f1f"
+      color: colors.bg
+    color: colors.fg
     font: bold: false
     padding: 1
   footer:
     background:
-      color: "#f8f8f8"
+      color: colors.bg
     border_top:
-      color: "#f8f8f8"
-    color: "#1f1f1f"
+      color: colors.bg
+    color: colors.fg
     padding: 1
 }
 
 return {
   window:
     background:
-      color: "#f8f8f8"
+      color: colors.bg
     status:
       font:
         bold: false
         italic: true
-      color: "#1f1f1f"
-      info: color: "#1f1f1f"
-      warning: color: "#1f1f1f"
-      'error': color: "#1f1f1f"
+      color: colors.fg
+      info: color: colors.fg
+      warning: color: colors.brown
+      'error': color: colors.red
 
   :content_box
 
   popup:
     background:
-      color: "#f8f8f8"
+      color: colors.bg
     border:
-      color: "#708090"
+      color: colors.grey
 
   editor: delegate_to content_box, {
     indicators:
       default:
-        color: "#1f1f1f"
+        color: colors.fg
       title:
         font: bold: false
       vi:
         font: bold: true
 
     caret:
-      color: "#1f1f1f"
+      color: colors.fg
       width: 1
 
     current_line:
-      background: "#669907" -- ?
+      background: colors.brown -- ?
 
     gutter:
-      color: "#1f1f1f"
+      color: colors.fg
       background:
-        color: "#f8f8f8"
+        color: colors.bg
   }
 
   flairs:
     indentation_guide:
       type: flair.PIPE,
-      foreground: "#1f1f1f", -- ?
+      foreground: colors.fg, -- ?
       foreground_alpha: 0.5,
       line_width: 0.5
 
     indentation_guide_1:
       type: flair.PIPE,
-      foreground: "#708090",
+      foreground: colors.grey,
       foreground_alpha: 0.5,
       line_width: 0.5
 
     indentation_guide_2:
       type: flair.PIPE,
-      foreground: "#708090",
+      foreground: colors.grey,
       foreground_alpha: 0.5,
       line_width: 0.5
 
     indentation_guide_3:
       type: flair.PIPE,
-      foreground: "#708090",
+      foreground: colors.grey,
       foreground_alpha: 0.5,
       line_width: 0.5
     edge_line:
       type: flair.PIPE,
-      foreground: "#708090",
+      foreground: colors.grey,
       foreground_alpha: 0.5,
       line_width: 0.5
 
     search: -- selected search
       type: highlight.ROUNDED_RECTANGLE
       foreground_alpha: 1
-      background: "#b3176e"
-      text_color: "#f8f8f8"
+      background: colors.turq
+      text_color: colors.bg
       height: 'text'
 
     search_secondary: -- non selected search
       type: flair.ROUNDED_RECTANGLE
-      background: "#96879d"
-      text_color: "#f8f8f8"
+      background: colors.red
+      text_color: colors.bg
       height: 'text'
 
     replace_strikeout:
       type: flair.ROUNDED_RECTANGLE
-      foreground: "#1f1f1f" -- ?
-      background: "#f8f8f8"
-      text_color: "#1f1f1f"
+      foreground: colors.fg -- ?
+      background: colors.bg
+      text_color: colors.fg
       height: 'text'
 
     brace_highlight:
       type: flair.RECTANGLE
-      text_color: "#8583aa"
+      text_color: colors.turq
       height: 'text'
 
     brace_highlight_secondary:
       type: flair.RECTANGLE
-      text_color: "#b3176e"
+      text_color: colors.pink
       height: 'text'
 
     list_selection:
       type: flair.RECTANGLE
-      background: "#669907" -- CHECK!
+      background: colors.brown -- CHECK!
       background_alpha: 0.3
 
     list_highlight:
       type: highlight.UNDERLINE
-      foreground: "#1f1f1f"
-      text_color: "#1f1f1f"
+      foreground: colors.fg
+      text_color: colors.fg
       line_width: 2
 
     cursor:
       type: flair.RECTANGLE
-      background: "#1f1f1f"
+      background: colors.fg
       width: 1
       height: 'text'
 
     block_cursor:
       type: flair.ROUNDED_RECTANGLE,
-      background: "#1f1f1f"
-      text_color: "#f8f8f8"
+      background: colors.fg
+      text_color: colors.bg
       height: 'text',
       min_width: 'letter'
 
     selection:
       type: highlight.ROUNDED_RECTANGLE
-      background: "#8583aa"
-      background_alpha: 0.6
+      background: colors.turq
+      background_alpha: 0.2
       min_width: 'letter'
 
   styles:
     default:
-      color: "#1f1f1f"
+      color: colors.fg
 
     red: color: red
     green: color: green
@@ -174,92 +189,91 @@ return {
     cyan: color: aqua
 
     popup: -- ?
-      background: "#669907"
-      color: "#1f1f1f"
+      background: colors.brown
+      color: colors.fg
 
     comment:
       font: italic: true
-      color: "#708090"
+      color: colors.grey
 
     variable:
-      color: "#1f1f1f"
+      color: colors.fg
 
     label:
-      color: "#1f1f1f"
+      color: colors.fg
       font: italic: true
 
     key:
-      color: "#1f1f1f"
+      color: colors.fg
       font: bold: false
 
     fdecl:
-      color: "#0f83b1"
+      color: colors.blue
       font: bold: false
 
     keyword:
-      color: "#0f83b1"
+      color: colors.green
       font: bold: false
 
     class:
-      color: "#1f1f1f"
+      color: colors.fg
 
     type_def:
-      color: "#1f1f1f"
+      color: colors.fg
       font: bold: false
 
     definition:
-      color: "#1f1f1f"
+      color: colors.fg
 
     function:
-      color: "#1f1f1f"
+      color: colors.green -- fg
       font: italic: true
 
     type:
-      -- color: "#1f1f1f"
-      color: "#8F1258"
+      color: colors.red
       font: italic: false
 
-    char: color: "#669907"
-    number: color: "#b3176e"
-    operator: color: "#1f1f1f"
-    preproc: color: "#1f1f1f"
-    special: color: "#b3176e"
-    tag: color: "#1f1f1f"
-    member: color: "#1f1f1f"
-    info: color: "#1f1f1f"
-    constant: color: "#1f1f1f"
-    string: color: "#669907"
+    char: color: colors.brown
+    number: color: colors.turq
+    operator: color: colors.blue
+    preproc: color: colors.fg
+    special: color: colors.turq
+    tag: color: colors.fg
+    member: color: colors.fg
+    info: color: colors.fg
+    constant: color: colors.fg
+    string: color: colors.brown
 
     regex:
-      color: "#1f1f1f"
-      background: "#f8f8f8"
+      color: colors.fg
+      background: colors.bg
 
     embedded:
-      color: "#1f1f1f"
-      background: "#f8f8f8"
+      color: colors.fg
+      background: colors.bg
 
     -- Markup and visual styles
 
     error:
       font: italic: true
-      color: "#1f1f1f"
-      background: "#f8f8f8"
+      color: colors.fg
+      background: colors.bg
 
     warning:
       font: italic: true
-      color: "#1f1f1f"
+      color: colors.fg
 
     h1:
       font: bold: true
-      color: "#1f1f1f"
+      color: colors.turq
 
     h2:
       font: bold: true
-      color: "#1f1f1f"
+      color: colors.turq
 
     h3:
       font: italic: true
-      color: "#1f1f1f"
+      color: colors.turq
 
     emphasis:
       font:
@@ -267,15 +281,15 @@ return {
         italic: true
 
     strong: font: italic: true
-    link_label: color: "#669907"
-    link_url: color: "#669907"
+    link_label: color: colors.brown
+    link_url: color: colors.brown
 
     table:
-      color: "#1f1f1f"
-      background: "#f8f8f8"
+      color: colors.fg
+      background: colors.bg
       underline: true
 
-    addition: color: "#1f1f1f"
-    deletion: color: "#1f1f1f"
-    change: color: "#1f1f1f"
+    addition: color: colors.fg
+    deletion: color: colors.fg
+    change: color: colors.fg
   }
