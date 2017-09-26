@@ -22,3 +22,4 @@ You may also just copy paste this:
 - Light (turned around Darkness)
 - Fruity (light)
 - Eleterm (dark)
+- Snazzy (dark and bright)

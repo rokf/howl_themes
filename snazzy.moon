@@ -82,7 +82,7 @@ return {
       background: colors.brown -- ?
 
     gutter:
-      color: colors.fg
+      color: colors.grey
       background:
         color: colors.bg
   }
@@ -226,7 +226,7 @@ return {
       color: colors.fg
 
     function:
-      color: colors.green -- fg
+      color: colors.green
       font: italic: true
 
     type:
@@ -234,7 +234,7 @@ return {
       font: italic: false
 
     char: color: colors.brown
-    number: color: colors.turq
+    number: color: colors.pink
     operator: color: colors.blue
     preproc: color: colors.fg
     special: color: colors.turq
