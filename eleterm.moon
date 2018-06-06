@@ -210,7 +210,7 @@ return {
 
     keyword:
       color: colors.turq
-      font: bold: false
+      font: bold: true
 
     class:
       color: colors.fg

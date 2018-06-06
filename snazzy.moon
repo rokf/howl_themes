@@ -12,7 +12,8 @@ colors = {
   red: "#FF5C56"
   pink: "#FF6AC1"
   brown: "#F3F99D"
-  grey: "#545B5D"
+  -- grey: "#545B5D"
+  grey: "#6b7375"
 }
 
 content_box = {
@@ -213,7 +214,7 @@ return {
 
     keyword:
       color: colors.green
-      font: bold: false
+      font: bold: true
 
     class:
       color: colors.fg
@@ -236,7 +237,7 @@ return {
     char: color: colors.brown
     number: color: colors.pink
     operator: color: colors.blue
-    preproc: color: colors.fg
+    preproc: color: colors.turq
     special: color: colors.turq
     tag: color: colors.fg
     member: color: colors.fg
