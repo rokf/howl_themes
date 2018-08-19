@@ -125,13 +125,14 @@ return {
       type: highlight.ROUNDED_RECTANGLE
       -- foreground: colors[16]
       foreground_alpha: 1
-      background: colors[1]
+      background: "#5696E1"
       text_color: colors[16]
       height: 'text'
 
     search_secondary: -- non selected search
       type: flair.ROUNDED_RECTANGLE
-      background: colors[4]
+      background: "#5696E1"
+      background_alpha: 0.3
       text_color: colors[16]
       height: 'text'
 
@@ -154,7 +155,7 @@ return {
 
     list_selection:
       type: flair.RECTANGLE
-      background: colors[5] -- CHECK!
+      background: "#5696E1"
       background_alpha: 0.3
 
     list_highlight:
@@ -178,7 +179,7 @@ return {
 
     selection:
       type: highlight.ROUNDED_RECTANGLE
-      background: colors[1] -- CHECK!
+      background: "#5696E1" -- CHECK!
       background_alpha: 0.6
       min_width: 'letter'
 
