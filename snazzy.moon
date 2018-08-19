@@ -174,8 +174,8 @@ return {
 
     selection:
       type: highlight.ROUNDED_RECTANGLE
-      background: colors.turq
-      background_alpha: 0.2
+      background: colors.blue
+      background_alpha: 0.3
       min_width: 'letter'
 
   styles:
