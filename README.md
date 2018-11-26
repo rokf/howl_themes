@@ -23,3 +23,4 @@ You may also just copy paste this:
 - Fruity (light)
 - Eleterm (dark)
 - Snazzy (dark and bright)
+- LaserWave (purple-ish dark, retro)
